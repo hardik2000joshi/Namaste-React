@@ -1,0 +1,64 @@
+App can have 3 parts: header, body and footer
+
+To dynamically pass data to a component we use props in parameter of functional component (props) => {
+
+}
+and in argument we call like {props.resName}
+
+
+we can use props by destructuring also:
+First Method:
+const Card = ({resName, resCuisine}) => {
+    return(
+        <h3>{resName}</h3>
+        <h3>{resCuisine}</h3>
+    )
+}
+
+const Body = () => {
+    return(
+        <Card
+        resName = "Dominos"
+        resCuisine = "Hot Cheese Pizza"
+        />
+    )
+}
+
+Second Method:
+const Card = (props) => {
+    const {resName, resCuisine} = props;
+    return (
+        <h3>{resName}</h3>
+        <h3>{resCuisine}</h3>
+    )
+}
+
+const Body = () => {
+    return(
+        <Card 
+        resName = "Dominos"
+        resCuisine = "Hot Cheese Pizza"
+        />
+    )
+}
+
+simple method:
+const Card = (props) => {
+ return(
+        <h3>{props.resName}</h3>
+        <h3>{props.resCuisine}</h3>
+    )
+}
+
+const Body = () => {
+    return(
+        <Card 
+        resName = "Dominos"
+        resCuisine = "Hot Cheese Pizza"
+        />
+    )
+}
+
+Config Driven UI: Website driven by config- configuration
+UI driven by configuration
+UI components are rendered based on config data not static code

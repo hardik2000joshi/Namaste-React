@@ -3,35 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React Introduction</title>
-    <link rel="stylesheet" href="index.css">
+    <title>React through parcel- dev dependency</title>
+    <!--<link rel="stylesheet" href="index.css">-->
+     <link rel="stylesheet" href="swiggy.css"> 
 </head>
 <body>
-    <p>React is library of javascript used to build user interface(UI) of a web application</p>
+    <!--<p>React is library of javascript used to build user interface(UI) of a web application</p>-->
     <div id="root">
-        <h1>Wlcome to react tutorial</h1>
-        <!--<script>
-            const head = document.createElement("h1");
-            head.innerHTML = "Hello World From Javascript";
-
-            const foot = document.getElementById("root");
-            root.appendChild(head);
-           //  document.writeln(head);
-           //  console.log(head);
-        </script>
+        <h1>Welcome to react tutorial</h1>
         <h1>
             Hello World from HTML
-        </h1>-->
+        </h1>
 
        
-        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--Core File of React-->
-        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> <!--Useful for DOM operations-->
+       <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>--> <!--Core File of React-->
+       <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> --> <!--Useful for DOM operations-->
 
-         <script src="index.js">
+        <script type="module" src="swiggy.js">
             // creating element - core thing of react
             // to render show it in div root
         </script>
     </div>
-    <p>Components are the reusuable part of web application - using components we can reuse many times a component</p>
 </body>
 </html>

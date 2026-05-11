@@ -1,0 +1,37 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This includes Namaste React code all the programs of react library",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/hardik2000joshi/Namaste-React.git)"
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "namaste",
+    "react"
+  ],
+  "author": "Hardik Joshi",
+  "license": "ISC",
+  "bugs" : {
+    "url": "https://github.com/hardik2000joshi/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/hardik2000joshi/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "browsersList": [
+    "Last 2 Chrome Version",
+    "Last 2 Firefox Version"
+  ]
+}

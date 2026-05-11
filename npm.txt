@@ -1,0 +1,105 @@
+mpm - package manager
+any package need to included in project - npm
+
+package.json - configuration for npm
+
+butler - webpack, parcel, vite
+
+parcel, vite, webpack - libraries
+two types of packages or dependencies:
+1. Dev Dependency - in development phase
+2. Normal Dependency - normal dependency required during production
+
+package.json - tells system what user want package.json is like a shopping list
+package-lock.json - tells syatem what user got, automatically generated or updated by npm during npm install.
+package-lock.json like a recipt.
+
+parcel needs help of other packages also to run.
+Different packages are there in node_modules
+
+node_modules also has package-lock.json. In node_modules also in parcel also we have package.json.
+
+we can recreate node_modules using package.json and package-lock.json even if we removed it.
+
+tidle ~ and caret ^ in package.json tells how npm updates dependencies.
+Tidle allows only patch updates (bug fixes) while caret permits minor updates while avoiding breakng major changes.
+
+npx used for executing a package parcel.
+command: npx parcel index.html means executing parcel - executing package parcel
+
+cdn links are not preferred or better way to bring react into html file : bring react into project
+
+For installng react: npm install react
+For installing react-dom: npm install react-dom
+we can also use only i instead of install - i short form for install 
+command: npm i react-dom
+for starting server on localhost: npx parcel index.html
+
+parcel - package which is dev dependency while react and react-dom - dependencies
+type="module" part of node_modules
+
+React making the application fast but not only react there are so many thngs and node_modules along with react for application so fast and optimized.
+
+parcel - manager managing all the libraries
+
+While working with parcel, we don't need main: index.js as package.json already generated for us
+
+To build in dist, npx parcel build index.html
+parcel will build all production files to dist folder
+
+we can use browsersList also -
+ "browsersList": [
+    "Last 2 Chrome Version",
+    "Last 2 Firefox Version"
+  ]
+
+  once we configure scripts in package.json file we don't need to start server by command: npx parcel index.html
+  that we already configure in scripts in package.json
+  we can use: npm run start or simply npm start to start the server
+  for build: we can use npm run build or npm build
+
+  code:  const parent = React.createElement(
+                "div",
+                {id: "parent"},
+                React.createElement(
+                    "div",
+                    {id: "child"},[
+                    React.createElement( "h1", {}, "Hello I'm h1 tag how're you"),
+                    React.createElement("h2", {}, "I'm an h2 tag"),
+                ]),
+                React.createElement(
+                    "div",
+                    {id: "child2"}, [
+                        React.createElement("h3", {}, "Hello I'm h3 tag let's explore into react"),
+                        React.createElement("h4", {}, "Hello I'm h4 tag how're you- it's interesting to learn react"),
+                    ]),
+            );
+
+            console.log(parent); // object
+            const root = ReactDOM.createRoot(document.getElementById("root"));
+            root.render(parent);
+
+            JSX: JavaScript XML
+
+            JSX or JavaScript XML is not writing HTML inside javascript. JSX is HTML like syntax
+            It is javascript XML like html syntax but not html.
+
+            parcel is doing job to execute the jsx code / to run jsx code
+            babel is javascript compiler - babel transpiles to convert one code into another
+            attributes must be camelcase in jsx: <h1 className="top"></h1>
+            if you write JSX in multiple lines use round brackets for writing in multiple lines
+
+            Functional components : writing component in function
+            normal javascript function that renders react elements
+
+            JSX: not blindly run the data or any api before running data or that api like injecting react element or any api stored in variable injected into function before
+            running it JSX sanitize that data and then runs. It saves us from fraudulent APIs
+
+            props: passing normal argument to a function. Props means properties
+            passing properties to a component is like passing argument to a function
+
+            To dynamically pass data to a component we use props in parameter of functional component (props) => {
+
+}
+and in argument we call like {props.resName}
+{props.resCuisine}
