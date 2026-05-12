@@ -62,3 +62,5 @@ const Body = () => {
 Config Driven UI: Website driven by config- configuration
 UI driven by configuration
 UI components are rendered based on config data not static code
+
+Config-driven UI means the UI is created from data/configuration instead of hardcoding every variation in JSX/HTML.

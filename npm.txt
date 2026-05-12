@@ -103,3 +103,24 @@ we can use browsersList also -
 }
 and in argument we call like {props.resName}
 {props.resCuisine}
+
+For importing a component first we need to export it by using (export default Component_Name) and after exporting we import it
+Like we have main file : swiggy.js or index.js through which our code runs:
+first we created component folder: like /components/Header in which we have Header Component.
+At the end of the component file: we first export - export default Component_Name
+and in main file like : index.js or swiggy.js we imported it - import Header from "./components/Header"
+we can use in import: /Header.js or /Header
+
+Never put harcoded links in component files always put hardcded links and hardcoded data in utils folder and in utils folder in constant file where we put all constant and hardcoded urls
+We cannot export same component multiple times or export in same file multiple times.
+We can export one component in one file - cannot have multiple default export.
+
+But if we have to export multiple things from same file we can use named exports
+like not use seprate export default Component_Name but instead we use export before our variable or component
+export const url = " ";
+
+Named export:
+export const url = " ";
+
+Named import:
+import {url} from "../utils/constant" import {variable / component} from "path"
